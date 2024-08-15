@@ -42,3 +42,8 @@ def create_student(student_id: int, student: Student):
         return {"Error": "Student exists"}
     students[student_id] = student
     return students[student_id]
+
+# FastAPI - Request Body (simple function)
+@app.post("/create-student/")
+def simple_request_body(s: Student):
+    return s
