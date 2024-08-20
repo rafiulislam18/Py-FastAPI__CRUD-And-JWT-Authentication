@@ -1,6 +1,3 @@
-import sys
-sys.path.append(".")
-
 from fastapi import FastAPI
 from . import models
 from .database import engine
