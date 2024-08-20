@@ -2,7 +2,6 @@ from pydantic import BaseModel
 from typing import List
 
 
-
 class BlogBase(BaseModel):
     title: str
     body: str
@@ -33,3 +32,7 @@ class ShowBlog(Blog):
 
     class Config():
         from_attributes = True
+
+class Login(BaseModel):
+    username: str
+    password: str
