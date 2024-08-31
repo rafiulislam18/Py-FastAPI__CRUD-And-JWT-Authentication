@@ -1,9 +1,10 @@
+# Lesson Name : Query Parameters and String Validations
+# Note : FastAPI allows you to declare additional information and validation for your parameters.
+
 from fastapi import FastAPI
 
 app = FastAPI()
 
-# Lesson: Query Parameters and String Validations
-# Explanation: This lesson demonstrates how to use query parameters in FastAPI. It shows a basic example where the query parameter 'q' is optional.
 
 @app.get("/items/")
 async def read_items(q: str | None = None):
