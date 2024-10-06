@@ -1,4 +1,4 @@
-# Python-FastAPI-CRUD-And-JWT-Authentication
+# Python FastAPI CRUD And JWT Authentication
 
 ## Run Project (on Windows)
 
